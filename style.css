@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+body {
+    background-color: rgb(25, 25, 112);
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+}
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+ul {
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 20vh;
+    background-color: #6666dd26;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+header span {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 4rem;
+    color: #ffffff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    height: 3rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 15px;
+    background: hsla(197, 100%, 63%, 1);
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1);
+}
+
+.form label {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+
+.form input[type=text] {
+    font-size: 1rem;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.2s;
+    outline: none;
+}
+
+.form input:focus {
+    border: 3px solid #1f71ff;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 13px;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    border: none;
+    color: #fff;
+    background: hsla(279, 95%, 49%, 1);
+    background: linear-gradient(90deg, rgb(166, 0, 255) 0%, rgba(55, 0, 255, 0.646) 100%);
+    cursor: pointer;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#A106F4", endColorstr="#E707FA", GradientType=1);
+
+
+}
+
+.btn2 {
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    background: hsla(279, 95%, 49%, 1);
+
+    background: linear-gradient(90deg, rgb(166, 0, 255) 0%, rgba(55, 0, 255, 0.646) 100%);
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+
+
+}
+
+
+.continer {
+    display: flex;
+    color: black;
+    height: auto;
+    padding: 15px 0;
+    min-width: 69vw;
+    max-width: 59vw;
+
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+    border-radius: 15px;
+    background: hsla(238, 100%, 71%, 1);
+
+    background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
+}
+
+.box {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.163);
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 11px;
+    padding: 15px;
+    transition: 1s;
+
+}
+
+.complite ul {
+    width: 100%;
+}
+
+.complite ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .form label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .continer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        padding: 20px;
+    }
+
+    .form {
+        height: auto;
+        width: auto;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .continer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .form {
+        height: auto;
+        width: auto;
+        padding: 10 45px;
+    }
+
+    .form button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 1px;
+    }
+}
